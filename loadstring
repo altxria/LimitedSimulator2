@@ -1,0 +1,3 @@
+_G.Enabled = true --false if you want to end autobuy
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/altxria/LimitedSimulator2/main/main'))()
