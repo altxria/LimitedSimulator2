@@ -1,11 +1,11 @@
 --If someone completely random is reading this, this only works for my monitor i think
 --contact me at altxria#7302 and tell me to make it dynamic and stuff
 
+print("altxria#7302")
 local notifHolder = game:GetService("Players").LocalPlayer.PlayerGui.Notifications.NotifHolder
 notifHolder.ChildAdded:Connect(function()
 print(notifHolder.Notification.Holder.PurchaseDecor.TextLabel.Text)
 if notifHolder.Notification.Holder.PurchaseDecor.TextLabel.Text == "New Item!" and _G.Enabled then
-print("goin")
 notifHolder.Notification.Name = "sus"
 wait(1)
 local x = math.random(1700, 1902)
