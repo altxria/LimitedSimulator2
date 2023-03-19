@@ -7,7 +7,7 @@ notifHolder.ChildAdded:Connect(function()
 print(notifHolder.Notification.Holder.PurchaseDecor.TextLabel.Text)
 if notifHolder.Notification.Holder.PurchaseDecor.TextLabel.Text == "New Item!" and _G.Enabled then
 notifHolder.Notification.Name = "sus"
-wait(1)
+wait(0.7)
 local x = math.random(1700, 1902)
 local y = math.random(40, 60) 
 local yo = 1002 + y
@@ -17,17 +17,17 @@ mouse1click() -- Item Announcement Click
 wait(0.1)
 local x2 = math.random(692, 1394)
 local y2 = math.random(421, 440)
-local y2o = math.random(40, 60) 
+local y2o = math.random(40, 50) 
 mousemoveabs(x2, y2 + y2o)
 mouse1click() -- Click Purchase In Menu
 
-wait(0.3)
+wait(0.1)
 local slider = game:GetService("Players").LocalPlayer.PlayerGui.Main.Frames.Store.ItemPreview.Prompt.FirstPrompt.Area.Slider.Container.Ball.AbsolutePosition                            
 mousemoveabs(slider.X + math.random(0, 30), slider.Y + math.random(40, 80))
 mouse1press() -- Click and hold slider (DYNAMIC WWWWWW)
 
 local mouse = game:GetService("Players").LocalPlayer:GetMouse()
-wait(0.2)
+wait(0.1)
 mousemoveabs(mouse.x + math.random(750, 1000), mouse.y) -- SLIDE THAT SLIDER
 end
 end)
