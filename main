@@ -7,7 +7,7 @@ notifHolder.ChildAdded:Connect(function()
 print(notifHolder.Notification.Holder.PurchaseDecor.TextLabel.Text)
 if notifHolder.Notification.Holder.PurchaseDecor.TextLabel.Text == "New Item!" and _G.Enabled then
 notifHolder.Notification.Name = "sus"
-wait(0.7)
+wait(0.4)
 local x = math.random(1700, 1902)
 local y = math.random(40, 60) 
 local yo = 1002 + y
